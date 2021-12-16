@@ -12,3 +12,55 @@
     transform: translateX(-50%);
   }
 }
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.678);
+  display: none;
+  .popup{
+    position: relative;
+    border: 1px solid green;
+    .close{
+
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      top: 0;
+      right: 0;
+      span{
+        cursor: pointer;
+        font-size: 30px;
+        color: #fff;
+      }
+      // span{
+      //   width: 10px;
+      //   height: 5px;
+      //   background: black;
+      // }
+      // &:first-child{
+      //   transform: rotateY(45deg)
+      // }
+    }
+    .arrows{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      div{
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}
