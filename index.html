@@ -9,24 +9,46 @@
     <title>Popup</title>
 </head>
 <body>
-<div class="username">
-    <form action="">
+<div class="username" style="display: none;">
+    <form action="#">
         <input type="text" id="username" placeholder="Input username">
         <input type="submit" id="submit" value="Send">
     </form>
 </div>
-<div class="container">
+<div class="container" style="display: flex;">
     <h1 class="title"></h1>
     <div class="images">
-        <a href="">
-            <img src="" alt="small image">
+        <a href="./assets/images/big/1.jpg" >
+            <img src="./assets/images/small/1.jpg" alt="small image">
         </a>
-        <a href="">
-            <img src="" alt="small image">
+        <a href="./assets/images/big/2.jpg" >
+            <img src="./assets/images/small/2.jpg" alt="small image">
         </a>
-        <a href="">
-            <img src="" alt="small image">
+        <a href="./assets/images/big/3.jpg">
+            <img src="./assets/images/small/3.jpg" alt="small image">
         </a>
+        <a href="./assets/images/big/4.jpg">
+            <img src="./assets/images/small/4.jpg" alt="small image">
+        </a>
+        <a href="./assets/images/big/5.jpg">
+            <img src="./assets/images/small/5.jpg" alt="small image">
+        </a>
+    </div>
+</div>
+<div class="modal">
+    <div class="popup">
+        <img src="./assets/images/big/1.jpg" alt="image big">
+        <div class="close">
+            <span class="closeModal">&times;</span>
+        </div>
+        <div class="arrows">
+            <div class="prev">
+                <span class="leftSlide">&lt;</span>
+            </div>
+            <div class="next">
+                <span class="rightSlide">&gt;</span>
+            </div>
+        </div>
     </div>
 </div>
 <script src="js/index.js"></script>
